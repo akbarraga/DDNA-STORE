@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beli Sekarang</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="#" />
+  </head>
+  <style>
+    *,
+    html {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #ffff;
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 1rem;
+    }
+
+    nav ul {
+      align-items: center;
+      display: flex;
+      margin-left: auto;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav div img {
+      width: 60%;
+      height: 130%;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-family: serif;
+      color: #191919;
+      font-weight: 500;
+      padding: 8px 0;
+      transition: all;
+      transition-duration: 300ms;
+      border-bottom: 1px solid rgba(255, 68, 0, 0);
+    }
+
+    nav ul li a:hover {
+      color: orangered;
+      border-bottom: 1px solid orangered;
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="">
+        <img height="50%" width="20%" src="images/DDNA_STORE.png" alt="logo" />
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="produk.html">Product</a>
+        </li>
+        <li>
+          <a href="login1.html">Login</a>
+        </li>
+        <li>
+          <a href="daftar.html">Daftar</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <h2>Selesaikan Pembelian Anda</h2>
+      <p>
+        Terima kasih telah memilih untuk membeli produk. Mohon berikan informasi
+        yang diperlukan untuk melanjutkan pembelian Anda.
+      </p>
+
+      <form id="purchaseForm">
+        <div class="form-group">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Alamat Email:</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Alamat Pengiriman:</label>
+          <textarea
+            class="form-control"
+            id="address"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <a
+          id="beliButton"
+          href="bayar.html"
+          class="btn btn-primary btn-lg"
+          onclick="completePurchase()"
+          >Selesaikan pembelian</a
+        >
+
+        <script>
+          function completePurchase() {
+            // Menyimulasikan penyelesaian pembelian
+            alert(
+              "Pesanan anda telah diproses!\nSilahkan pilih metode pembayaran."
+            );
+
+            // Periksa apakah pengguna sudah login atau belum
+            if (userLoggedIn) {
+              // Jika sudah menyelesaikan pembelian, arahkan ke halaman home
+              window.location.href = "index.php";
+            }
+          }
+        </script>
+      </form>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

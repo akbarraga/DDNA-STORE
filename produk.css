@@ -1,0 +1,22 @@
+body {
+  background-image: url("images/wpp_apple.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.contrainer {
+  margin-bottom: 20px;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  margin-left: none;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 90px;
+}
